@@ -59,7 +59,7 @@ oos_r2 <- 1 - sum((test$today - predictions)^2) /
 cat("Out-of-sample R-squared:", round(oos_r2, 5), "\n")
 
 
-png("D:/quantitative-research-r/spy_out_of_sample.png",
+png("spy_out_of_sample.png",
     width = 1100, height = 650)
 
 plot(test$today * 100, type = "l", col = "gray60",
